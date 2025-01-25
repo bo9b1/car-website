@@ -15,7 +15,7 @@ body{
 li , a, button{
     font-family: "Montserrat", "sans-serif";
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -23,8 +23,7 @@ li , a, button{
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;  
+    align-items: center;  
     height: 120px;
 
 }
@@ -90,6 +89,17 @@ button:hover{
   
 }
 
+@keyframes floatAppear {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .slogan{
     position:absolute;
     font-family: "Montserrat", "sans-serif";
@@ -101,13 +111,58 @@ button:hover{
 
 }
 
-@keyframes floatAppear {
-    0% {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+
+
+.about-container {
+    padding: 40px;
+    font-family: "Montserrat", "sans-serif";
+    color: #fff; 
+    line-height: 1.6;
+    position: relative;
+
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .advantage-item {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 20px;
+    animation: floatAppear 2s ease-out forwards;
+    max-width: 720px;
+  }
+  
+
+  .advantage-item p {
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+  }
+
+  
+.about_us_image{
+    position: absolute;
+    width: 684px;
+    height: auto;
+    right: 0px;
+    top: 170px;
+    border-radius: 50px;
+    margin-right: 90px;
 }
+  
+  
+
+
