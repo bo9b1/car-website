@@ -157,12 +157,120 @@ button:hover{
     position: absolute;
     width: 684px;
     height: auto;
+    left: 800px;
     right: 0px;
-    top: 170px;
+    top: 150px;
     border-radius: 50px;
     margin-right: 90px;
 }
-  
+
+.contact-container{
+    margin-top: 60px;
+    display: flex;
+}
+.contact-container p{
+    color:#ffff;
+}
+.first-col {
+    margin-left: 40px;
+}
+.first-col div{
+    margin-bottom: 25px;
+}
+.revup {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.revup-context{
+    width:240px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.connect-logos i {
+    color:#ffff;
+    padding-right: 5px;
+}
+.first-col-footer{
+    display:flex;
+    gap:10px;
+}
+.copyright{
+    margin-top: 10px;
+}
+.copyright-message {
+    margin-top: 10px;
+    width: 250px;
+}
+.fa-copyright{
+    margin: 0;
+    color:#ffff;
+}
+.second-col, .third-col{
+    margin-left: 180px;
+    margin-top: 25px;
+}
+.col-header{
+    margin-bottom: 25px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.information p{
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+.third-col p{
+    width: 150px;
+}
+.fourth-col{
+    margin-left:100px;
+    margin-top:25px;
+}
+.fourth-col p{
+    width: 305px;
+}
+.email{
+    margin-top:20px;
+    display: flex;
+}
+.input{
+    background-color: #ffffff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.input p{
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 13px;
+    color: #808080;
+}
+.confirm button{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #1f1e1e;
+    color: #ffffff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-family: sans-serif;
+    font-size: 12px;
+    border: none;
+}
+.right-footer{
+    margin-top: 35px;
+}
+.payment-method{
+    display: flex;
+    gap:10px
+}
+.payment-method img{
+    max-width: 10%;
+}
   
 
 
