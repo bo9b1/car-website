@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -100,6 +102,30 @@ button:hover{
     }
 }
 
+@keyframes appear{
+
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+        
+} 
+
+@keyframes scroll {
+   from{
+    transform: translateX(0);
+   }
+
+   to{
+    transform: translateX(-100%);
+    
+   }
+}
+
 .slogan{
     position:absolute;
     font-family: "Montserrat", "sans-serif";
@@ -119,7 +145,9 @@ button:hover{
     color: #fff; 
     line-height: 1.6;
     position: relative;
-
+    animation: appear 7s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
   }
   
   h2 {
@@ -271,6 +299,142 @@ button:hover{
 .payment-method img{
     max-width: 10%;
 }
+.logos img{
+    height: 76px;
+    margin: 0 40px;
+}
+.logos{
+    animation: 40s scroll infinite linear;
+    opacity: 0.8;
+}
+.logo-container{
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: white;
+    padding: 40px 0;
+    height: 150px;
+    animation: appear 7s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+
+}
+.logos:hover{
+    animation-play-state: paused;
+}
+.box-grid{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    height: 715px;
+}
+.box-grid h1,h2{
+    font-size: 35px;
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;
+   
+}
+.box{
+    text-align: center;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    width: 100%; 
+    height: 1000px; 
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px #0000;
+    transition: transform 0.2s;
+    animation: appear 7s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   
+}
+.box h1{
+    /* padding-left: 35%; */
+    position: absolute;
+    font-size: 100px;
+    color: white;
+  
+}
+
+.box:hover{
+    transform: scale(1.05);
+}
+.arrow img{
+    position: absolute;
+    max-width: 110px;
+    max-height: 110px;
+}
+.location-section  iframe{  
+   border-radius: 20px;
+}
+
+.location-section{
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    margin-right: 200px;
+    margin-left: 150px;
+}
+.location-question h1{
+    color: #ffff;
+}
+.location-section h1,p{
+    color: #ffff;
+}
+.search-headline {
+    margin-bottom: 40px;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.location-details p{
+    font-size: 19px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    width: 400px;
+}
+#email-middle {
+    margin-top:20px;
+    display: flex;
+}
+#input-middle {
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding-right: 180px;
+}
+#input-middle p{
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 13px;
+    color: #808080;
+}
+#confirm-middle button{
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #1f1e1e;
+    color: #ffffff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-family: sans-serif;
+    font-size: 12px;
+    border: none;
+}
 
 
