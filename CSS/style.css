@@ -3,6 +3,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -14,28 +15,83 @@ body{
     background-color:#24252A ;
 }
 
-li , a, button{
+/* li , a, button{
     font-family: "Montserrat", "sans-serif";
     font-weight: 500;
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
-}
+} */
 
-header{
+/* header{
     display: flex;
     justify-content: space-between;
     align-items: center;  
     height: 120px;
 
+} */
+
+
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-height: 90px;
+    
+    
 }
 
+.nav-container button{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    /* transition: background-color 0.3s ease-in-out; */
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Montserrat", "sans-serif";
+
+}
+
+.button-login{
+    color: white;
+    margin-right: 20px;
+}
+
+.nav-container ul{
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    gap: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: "Montserrat", "sans-serif";
+    gap: 20px;
+
+
+    
+}
+
+.nav-container ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+
 .logo{
+    margin-right: auto;
     cursor: pointer;
     width: 205px;
 }
 
-.nav_items{
+/* .nav_items{
     list-style: none;
 
 }
@@ -44,7 +100,7 @@ header{
     display: inline-block;
     padding: 0px 20px;
 
-}
+} */
 
 .nav_items li a {
     transition: all 0.3s ease 0s;
@@ -54,18 +110,18 @@ header{
     color: #0088a9;
 }
 
-button{
+/* button{
     padding: 9px 25px;
     background-color: #0088a9;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-}
+} */
 
-button:hover{
+/* button:hover{
     background-color: #006984;
-}
+} */
 
 .video-section {
     display: flex;
@@ -85,12 +141,20 @@ button:hover{
 
 .buttons_container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
     align-items: center;
     margin-top: 20px;
     gap: 20px;
     margin-right: 20px;
   
+}
+
+.buttons_container button{
+    padding: 10px 20px;
+    background-color: #0088a9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
 @keyframes floatAppear {
@@ -154,7 +218,7 @@ button:hover{
 .slogan{
     position:absolute;
     font-family: "Montserrat", "sans-serif";
-    color: #edf0f1;
+    color: #000000;
     font-size:50px;
     left: 95px;
     animation: floatAppear 2s ease-out forwards;
@@ -332,6 +396,7 @@ button:hover{
     animation: 40s scroll infinite linear;
     opacity: 0.8;
 }
+
 .logo-container{
     margin-top: 60px;
     white-space: nowrap;
@@ -413,9 +478,11 @@ button:hover{
     gap: 300px;
     margin-right: 200px;
     margin-left: 150px;
+    margin-top: 80px;
 }
 .location-question h1{
     color: #ffff;
+
 }
 .location-section h1,p{
     color: #ffff;
